@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/jpg" href="imagenes/logo.jpg">
+    <title>Ejercicio3</title>
+    <link rel="stylesheet" href="estilos/estilos.css">
+</head>
+<body>
+
+    <header class="header">
+
+        <div class="menu container">
+            <a href="#" class="logo">Streaming</a>
+
+            <input type="checkbox" id="menu"/>
+            <label for="menu">
+                <img src="imagenes/menu.png" class="menu-icono" alt="menu">
+            </label>
+                <nav class="navbar">
+                    <ul>
+                        <li><a href="indexp.html">Inicio</a></li>
+                        <li><a href="#">Acerca de</a>
+                          <ul>
+                            <li><a href="pagina1.html">Que es?</a></li>
+                            <li><a href="pagina2.html">Ventajas</a></li>
+                            <li><a href="pagina3.html">Impacto</a></li>
+                          </ul>
+                        </li>
+                        <li><a href="#">Contenido</a>
+                          <ul>
+                            <li><a href="pagina4.html">Series y Peliculas</a></li>
+                            <li><a href="pagina5.html">Musica</a></li>
+                            <li><a href="pagina6.html">Deportes</a></li>
+                            <li><a href="pagina7.html">Live</a></li>
+                            <li><a href="pagina8.html">Anime</a></li>
+                            <li><a href="pagina9.html">Educacion</a></li>
+                          </ul>
+                        </li>
+                        <li><a href="#">Info</a>
+                          <ul>
+                            <li><a href="pagina10.html">Consejos</a></li>
+                            <li><a href="pagina11.html">Compatibilidad</a></li>
+                            <li><a href="pagina12.html">Novedades</a></li>
+                            <li><a href="pagina13.html">Encuesta</a></li>
+                            <li><a href="pagina14.html">Contactenos</a></li>
+                          </ul>
+                        
+                        </li>
+                          <li><a href="#">Planes</a>
+                            <ul>
+                                <li><a href="planes1.html">Series y Peliculas</a></li>
+                                <li><a href="planes2.html">Musica</a></li>
+                                <li><a href="planes3.html">Deportes</a></li>
+                                <li><a href="planes4.html">Live</a></li>
+                                <li><a href="planes5.html">Anime</a></li>
+                                <li><a href="planes6.html">Educacion</a></li>
+                            </ul>
+                          </li>
+                          <li><a href="#">Dispositivos</a>
+                            <ul>
+                                <li><a href="dispositivos1.html">Celulares</a></li>
+                                <li><a href="dispositivos2.html">Tablets</a></li>
+                                <li><a href="dispositivos3.html">Computadores</a></li>
+                                <li><a href="dispositivos4.html">TV</a></li>
+                                <li><a href="dispositivos5.html">Chromecast</a></li>
+                                <li><a href="dispositivos6.html">Video Beams</a></li>
+                            </ul>
+                          </li>
+                          <li><a href="#">Java Script</a>
+                            <ul>
+                                <li><a href="ejercicio1.html">Ejercicio1</a></li>
+                                <li><a href="ejercicio2.html">Ejercicio2</a></li>
+                                <li><a href="ejercicio3.html">Ejercicio3</a></li>
+                                <li><a href="ejercicio4.html">Ejercicio4</a></li>
+                                <li><a href="ejercicio5.html">Ejercicio5</a></li>
+                                <li><a href="ejercicio6.html">Ejercicio6</a></li>
+                                <li><a href="ejercicio7.html">Ejercicio7</a></li>
+                                <li><a href="ejercicio8.html">Ejercicio8</a></li>
+                                <li><a href="ejercicio9.html">Ejercicio9</a></li>
+                                <li><a href="ejercicio10.html">Ejercicio10</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            <div>
+                <ul>
+                    <li class="submenu">
+                        &nbsp;<img src="imagenes/car.svg" id="img-carrito" alt="carrito">
+                        <div id="carrito">
+                            <table id="lista-carrito">
+                                <thead>
+                                    <tr>
+                                        <th>Imagen</th>
+                                        <th>Nombre</th>
+                                        <th>Precio</th>
+                                    </tr>
+                                </thead>
+                                <tbody></tbody>
+                            </table>
+                            <a href="#" id="vaciar-carrito" class="btn-2">Vaciar Carrito</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li class="login">
+                        <a href="login.html"><img src="imagenes/user.png"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="container3  ">
+            <h2>Programa 3 - Calculadora de Puntaje</h2><br>
+            <p>Programa que calcula el puntaje final de un postulante basándose en el número 
+               de respuestas correctas, incorrectas y en blanco dadas, tomando en cuenta que 
+               cada respuesta correcta suma 4 puntos, cada respuesta incorrecta resta 1 punto, 
+               y las respuestas en blanco no afectan al puntaje.</p>
+            <form id="scoreCalculatorForm">
+                <label for="correctAnswers">Respuestas correctas:</label>
+                <input type="number" id="correctAnswers" required min="0">
+    
+                <label for="incorrectAnswers">Respuestas incorrectas:</label>
+                <input type="number" id="incorrectAnswers" required min="0">
+    
+                <label for="blankAnswers">Respuestas en blanco:</label>
+                <input type="number" id="blankAnswers" required min="0">
+    
+                <button type="button" onclick="calculateScore()">Calcular Puntaje</button>
+    
+                <div id="result"></div>
+            </form>
+        </div>
+
+    </header>
+    
+    <footer class="footer">
+        <div class="footer-content container">
+
+            <div class="codetheworld-io">
+                <br>
+                <br>
+                <a href="https://twitter.com" style="--color: #00acee">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+                <a href="https://instagram.com" style="--color: #E1306C">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://tiktok.com" style="--color: #FF0050">
+                    <i class="fa-brands fa-tiktok"></i>
+                </a>
+                <a href="https://facebook.com" style="--color: #3b5998">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="https://whatsapp.com" style="--color: #25D366">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+                <a href="https://youtube.com" style="--color: #c4302b">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+            </div>
+
+            <div class="link">
+                <h3>Ayuda</h3>
+                <ul>
+                    <li><a href="pagina14.html">Info</a></li>
+                    <li><a href="pagina10.html">Consejos</a></li>
+                </ul>
+            </div>
+
+            <div class="link">
+                <h3>Politica</h3>
+                <ul>
+                    <li><a href="https://protecciondatos-lopd.com/empresas/politica-de-privacidad-web/#:~:text=La%20pol%C3%ADtica%20de%20privacidad%20de%20una%20p%C3%A1gina%20web%20es%20un,se%20realizar%C3%A1%20de%20los%20mismos.">Privacidad</a></li>
+                    <li><a href="https://vpnoverview.com/es/desbloquear/el-streaming/mejores-servicios-de-streaming/">Servicios</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </footer>
+
+
+    <script src="scrips/scrip3.js"></script>
+</body>
+</html>

@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/jpg" href="imagenes/logo.jpg">
+    <title>Planes2</title>
+    <link rel="stylesheet" href="estilos/estilos.css">
+</head>
+<body>
+
+    <header class="header">
+
+        <div class="menu container">
+            <a href="#" class="logo">Streaming</a>
+
+            <input type="checkbox" id="menu"/>
+            <label for="menu">
+                <img src="imagenes/menu.png" class="menu-icono" alt="menu">
+            </label>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="indexp.html">Inicio</a></li>
+                    <li><a href="#">Acerca de</a>
+                      <ul>
+                        <li><a href="pagina1.html">Que es?</a></li>
+                        <li><a href="pagina2.html">Ventajas</a></li>
+                        <li><a href="pagina3.html">Impacto</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="#">Contenido</a>
+                      <ul>
+                        <li><a href="pagina4.html">Series y Peliculas</a></li>
+                        <li><a href="pagina5.html">Musica</a></li>
+                        <li><a href="pagina6.html">Deportes</a></li>
+                        <li><a href="pagina7.html">Live</a></li>
+                        <li><a href="pagina8.html">Anime</a></li>
+                        <li><a href="pagina9.html">Educacion</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="#">Info</a>
+                      <ul>
+                        <li><a href="pagina10.html">Consejos</a></li>
+                        <li><a href="pagina11.html">Compatibilidad</a></li>
+                        <li><a href="pagina12.html">Novedades</a></li>
+                        <li><a href="pagina13.html">Encuesta</a></li>
+                        <li><a href="pagina14.html">Contactenos</a></li>
+                      </ul>
+                    
+                    </li>
+                      <li><a href="#">Planes</a>
+                        <ul>
+                            <li><a href="planes1.html">Series y Peliculas</a></li>
+                            <li><a href="planes2.html">Musica</a></li>
+                            <li><a href="planes3.html">Deportes</a></li>
+                            <li><a href="planes4.html">Live</a></li>
+                            <li><a href="planes5.html">Anime</a></li>
+                            <li><a href="planes6.html">Educacion</a></li>
+                        </ul>
+                      </li>
+                      <li><a href="#">Dispositivos</a>
+                        <ul>
+                          <li><a href="dispositivos1.html">Celulares</a></li>
+                          <li><a href="dispositivos2.html">Tablets</a></li>
+                          <li><a href="dispositivos3.html">Computadores</a></li>
+                          <li><a href="dispositivos4.html">TV</a></li>
+                          <li><a href="dispositivos5.html">Chromecast</a></li>
+                          <li><a href="dispositivos6.html">Video Beams</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <ul>
+                    <li class="submenu">
+                        <img src="imagenes/car.svg" id="img-carrito" alt="carrito">
+                        <div id="carrito">
+                            <table id="lista-carrito">
+                                <thead>
+                                    <tr>
+                                        <th>Imagen</th>
+                                        <th>Nombre</th>
+                                        <th>Precio</th>
+                                    </tr>
+                                </thead>
+                                <tbody></tbody>
+                            </table>
+                            <a href="#" id="vaciar-carrito" class="btn-2">Vaciar Carrito</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li class="login">
+                        <a href="login.html"><img src="imagenes/user.png"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <main class="products container" id="lista-1">
+
+            <h2>Spotify</h2>
+    
+            <div class="product-content">
+    
+                <div class="product">
+                    <img src="imagenes/planspotify.jpg" alt="">
+                    <div class="product-txt">
+                        <h3>Plan Individual</h3>
+                        <p class="caracteristicas"> Incluye una cuenta individual que 
+                            te permite escuchar música sin anuncios, reproducir tus 
+                            canciones en cualquier lugar, incluso sin conexión a 
+                            Internet, y controlar el orden de reproducción de las 
+                            canciones a tu gusto. Puedes elegir entre la opción de 
+                            prepago o la suscripción mensual para acceder a estas 
+                            ventajas</p>
+                        <p class="precio">COP $ 16.900/mes</p>
+                        <a href="#" class="agregar-carrito btn-2" data-id="1">Agregar al carrito</a>
+                    </div>
+                </div>
+    
+                <div class="product">
+                    <img src="imagenes/planspotify.jpg" alt="">
+                    <div class="product-txt">
+                        <h3>Plan Duo</h3>
+                        <p class="caracteristicas"> Para parejas que conviven 
+                            incluye 2 cuentas Premium con música sin anuncios, 
+                            escucha sin conexión y reproducción en cualquier 
+                            orden. Puedes elegir entre la opción prepaga o 
+                            suscripción.</p>
+                        <p class="precio">COP $ 21.400/mes</p>
+                        <a href="#" class="agregar-carrito btn-2" data-id="2">Agregar al carrito</a>
+                    </div>
+                </div>
+    
+                <div class="product">
+                    <img src="imagenes/planspotify.jpg" alt="">
+                    <div class="product-txt">
+                        <h3> Plan Familiar</h3>
+                        <p class="caracteristicas">Incluye hasta 6 cuentas Premium 
+                            para familiares que conviven, ofreciendo la ventaja 
+                            de bloquear música explícita. Los usuarios pueden 
+                            disfrutar de música sin anuncios, acceder a contenido 
+                            sin conexión y la libertad de reproducir canciones en 
+                            cualquier orden. También brinda la opción de pago 
+                            prepago o suscripción.</p>
+                        <p class="precio">COP $ 26.400/mes</p>
+                        <a href="#" class="agregar-carrito btn-2" data-id="3">Agregar al carrito</a>
+                    </div>
+                </div>
+            </div>
+
+            <br><h2>Apple Music</h2>
+    
+            <div class="product-content">
+    
+                <div class="product">
+                    <img src="imagenes/planapple.jpg" alt="">
+                    <div class="product-txt">
+                        <h3>Plan Estudiantes</h3>
+                        <p class="caracteristicas">Incluye más de 100 millones de canciones, 
+                            sin anuncios, y te brinda acceso a contenido exclusivo, 
+                            conciertos y estaciones de radio presentadas por 
+                            artistas. Puedes disfrutar de audio espacial con 
+                            Dolby Atmos, descargar hasta 100.000 canciones y 
+                            acceder a tu biblioteca desde cualquier dispositivo. 
+                            Además, puedes descubrir la música que escuchan tus 
+                            amigos.</p>
+                        <p class="precio">COP $ 8.500/mes</p>
+                        <a href="#" class="agregar-carrito btn-2" data-id="1">Agregar al carrito</a>
+                    </div>
+                </div>
+    
+                <div class="product">
+                    <img src="imagenes/planapple.jpg" alt="">
+                    <div class="product-txt">
+                        <h3>Plan Individual</h3>
+                        <p class="caracteristicas"> Incluye más de 100 millones de canciones, 
+                            sin anuncios, y te brinda acceso a contenido exclusivo, 
+                            conciertos y estaciones de radio presentadas por 
+                            artistas. Puedes disfrutar de audio espacial con 
+                            Dolby Atmos, descargar hasta 100.000 canciones y 
+                            acceder a tu biblioteca desde cualquier dispositivo. 
+                            Además, puedes descubrir la música que escuchan tus 
+                            amigos.</p>
+                        <p class="precio">COP $ 16.900/mes</p>
+                        <a href="#" class="agregar-carrito btn-2" data-id="2">Agregar al carrito</a>
+                    </div>
+                </div>
+    
+                <div class="product">
+                    <img src="imagenes/planapple.jpg" alt="">
+                    <div class="product-txt">
+                        <h3> Plan Familiar</h3>
+                        <p class="caracteristicas">Incluye acceso a más de 100 millones de 
+                            canciones, sin anuncios, con contenido exclusivo y 
+                            estaciones de radio en vivo. Es compatible con 
+                            dispositivos Apple y otros compatibles, con audio 
+                            de alta calidad y descarga de hasta 100,000 canciones. 
+                            Además, permite compartir con hasta seis personas, 
+                            cada una con su biblioteca de música personalizada y 
+                            recomendaciones.</p>
+                        <p class="precio">COP $ 25.900/mes</p>
+                        <a href="#" class="agregar-carrito btn-2" data-id="3">Agregar al carrito</a>
+                    </div>
+                </div>
+            </div>
+
+            <br><h2>Youtube Music</h2>
+    
+            <div class="product-content">
+    
+                <div class="product">
+                    <img src="imagenes/planyoutube.jpg" alt="">
+                    <div class="product-txt">
+                        <h3>Plan Estudiantes</h3>
+                        <p class="caracteristicas">Inclye un servicio que permite 
+                            escuchar música sin anuncios, descargar música y 
+                            escucharla sin conexión, reproducir música en 
+                            segundo plano y cambiar la calidad de audio 
+                            a un precio especial para estudiantes.</p>
+                        <p class="precio">COP $ 7.490/mes</p>
+                        <a href="#" class="agregar-carrito btn-2" data-id="1">Agregar al carrito</a>
+                    </div>
+                </div>
+    
+                <div class="product">
+                    <img src="imagenes/planyoutube.jpg" alt="">
+                    <div class="product-txt">
+                        <h3>Plan Individual</h3>
+                        <p class="caracteristicas">Inclye un servicio que permite 
+                            escuchar música sin anuncios, descargar música y 
+                            escucharla sin conexión, reproducir música en 
+                            segundo plano y cambiar la calidad de audio. </p>
+                        <p class="precio">COP $ 14.900/mes</p>
+                        <a href="#" class="agregar-carrito btn-2" data-id="2">Agregar al carrito</a>
+                    </div>
+                </div>
+    
+                <div class="product">
+                    <img src="imagenes/planyoutube.jpg" alt="">
+                    <div class="product-txt">
+                        <h3> Plan Familiar</h3>
+                        <p class="caracteristicas">Inclye un servicio que permite 
+                            escuchar música sin anuncios, descargar música y 
+                            escucharla sin conexión, reproducir música en 
+                            segundo plano y cambiar la calidad de audio, 
+                            adiconalmente admite hasta seis miembros de una 
+                            familia para escuchar musica sin limites.</p>
+                        <p class="precio">COP $ 25.900/mes</p>    
+                        <a href="#" class="agregar-carrito btn-2" data-id="3">Agregar al carrito</a>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+    </header>
+
+    <footer class="footer">
+        <div class="footer-content container">
+
+            <div class="codetheworld-io">
+                <br>
+                <br>
+                <a href="https://twitter.com" style="--color: #00acee">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+                <a href="https://instagram.com" style="--color: #E1306C">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://tiktok.com" style="--color: #FF0050">
+                    <i class="fa-brands fa-tiktok"></i>
+                </a>
+                <a href="https://facebook.com" style="--color: #3b5998">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="https://whatsapp.com" style="--color: #25D366">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+                <a href="https://youtube.com" style="--color: #c4302b">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+            </div>
+
+            <div class="link">
+                <h3>Ayuda</h3>
+                <ul>
+                    <li><a href="pagina14.html">Info</a></li>
+                    <li><a href="pagina10.html">Consejos</a></li>
+                </ul>
+            </div>
+
+            <div class="link">
+                <h3>Politica</h3>
+                <ul>
+                    <li><a href="https://protecciondatos-lopd.com/empresas/politica-de-privacidad-web/#:~:text=La%20pol%C3%ADtica%20de%20privacidad%20de%20una%20p%C3%A1gina%20web%20es%20un,se%20realizar%C3%A1%20de%20los%20mismos.">Privacidad</a></li>
+                    <li><a href="https://vpnoverview.com/es/desbloquear/el-streaming/mejores-servicios-de-streaming/">Servios</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </footer>
+
+
+    <script src="scrip.js"></script>
+</body>
+</html>

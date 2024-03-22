@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/jpg" href="imagenes/logo.jpg">
+    <title>Ejercicio10</title>
+    <link rel="stylesheet" href="estilos/estilos.css">
+</head>
+<body>
+
+    <header class="header">
+
+        <div class="menu container">
+            <a href="#" class="logo">Streaming</a>
+
+            <input type="checkbox" id="menu"/>
+            <label for="menu">
+                <img src="imagenes/menu.png" class="menu-icono" alt="menu">
+            </label>
+                <nav class="navbar">
+                    <ul>
+                        <li><a href="indexp.html">Inicio</a></li>
+                        <li><a href="#">Acerca de</a>
+                          <ul>
+                            <li><a href="pagina1.html">Que es?</a></li>
+                            <li><a href="pagina2.html">Ventajas</a></li>
+                            <li><a href="pagina3.html">Impacto</a></li>
+                          </ul>
+                        </li>
+                        <li><a href="#">Contenido</a>
+                          <ul>
+                            <li><a href="pagina4.html">Series y Peliculas</a></li>
+                            <li><a href="pagina5.html">Musica</a></li>
+                            <li><a href="pagina6.html">Deportes</a></li>
+                            <li><a href="pagina7.html">Live</a></li>
+                            <li><a href="pagina8.html">Anime</a></li>
+                            <li><a href="pagina9.html">Educacion</a></li>
+                          </ul>
+                        </li>
+                        <li><a href="#">Info</a>
+                          <ul>
+                            <li><a href="pagina10.html">Consejos</a></li>
+                            <li><a href="pagina11.html">Compatibilidad</a></li>
+                            <li><a href="pagina12.html">Novedades</a></li>
+                            <li><a href="pagina13.html">Encuesta</a></li>
+                            <li><a href="pagina14.html">Contactenos</a></li>
+                          </ul>
+                        
+                        </li>
+                          <li><a href="#">Planes</a>
+                            <ul>
+                                <li><a href="planes1.html">Series y Peliculas</a></li>
+                                <li><a href="planes2.html">Musica</a></li>
+                                <li><a href="planes3.html">Deportes</a></li>
+                                <li><a href="planes4.html">Live</a></li>
+                                <li><a href="planes5.html">Anime</a></li>
+                                <li><a href="planes6.html">Educacion</a></li>
+                            </ul>
+                          </li>
+                          <li><a href="#">Dispositivos</a>
+                            <ul>
+                                <li><a href="dispositivos1.html">Celulares</a></li>
+                                <li><a href="dispositivos2.html">Tablets</a></li>
+                                <li><a href="dispositivos3.html">Computadores</a></li>
+                                <li><a href="dispositivos4.html">TV</a></li>
+                                <li><a href="dispositivos5.html">Chromecast</a></li>
+                                <li><a href="dispositivos6.html">Video Beams</a></li>
+                            </ul>
+                          </li>
+                          <li><a href="#">Java Script</a>
+                            <ul>
+                                <li><a href="ejercicio1.html">Ejercicio1</a></li>
+                                <li><a href="ejercicio2.html">Ejercicio2</a></li>
+                                <li><a href="ejercicio3.html">Ejercicio3</a></li>
+                                <li><a href="ejercicio4.html">Ejercicio4</a></li>
+                                <li><a href="ejercicio5.html">Ejercicio5</a></li>
+                                <li><a href="ejercicio6.html">Ejercicio6</a></li>
+                                <li><a href="ejercicio7.html">Ejercicio7</a></li>
+                                <li><a href="ejercicio8.html">Ejercicio8</a></li>
+                                <li><a href="ejercicio9.html">Ejercicio9</a></li>
+                                <li><a href="ejercicio10.html">Ejercicio10</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            <div>
+                <ul>
+                    <li class="submenu">
+                        &nbsp;<img src="imagenes/car.svg" id="img-carrito" alt="carrito">
+                        <div id="carrito">
+                            <table id="lista-carrito">
+                                <thead>
+                                    <tr>
+                                        <th>Imagen</th>
+                                        <th>Nombre</th>
+                                        <th>Precio</th>
+                                    </tr>
+                                </thead>
+                                <tbody></tbody>
+                            </table>
+                            <a href="#" id="vaciar-carrito" class="btn-2">Vaciar Carrito</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li class="login">
+                        <a href="login.html"><img src="imagenes/user.png"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+            <script>
+                //Variables de Entrada
+                function calcular(){
+                  //Variables de Entrada
+                  //Informacion del Empleado
+                  var tipo_documento=(document.getElementById('tipo_documento').value)
+                  var numero=(document.getElementById('numero').value) 
+                  var nombre=(document.getElementById('nombre').value)
+                  var salario=parseFloat((document.getElementById('salario').value))
+                  var dias=parseInt((document.getElementById('dias').value))
+                  var hed=parseInt((document.getElementById('hed').value))
+                  var hen=parseInt((document.getElementById('hen').value))
+                  var hefd=parseInt((document.getElementById('hefd').value))
+                  var hefn=parseInt((document.getElementById('hefn').value))
+                        //Salarios Devengados por el empleado
+                        sueldo = salario/30*dias
+                  sueldo = sueldo.toFixed(2);
+                  document.getElementById ('sueldo').value=sueldo 
+                  if(salario<=2320000)
+                    auxilio_transporte = 140600/30*dias
+                  else
+                    auxilio_transporte = 0;
+                    auxilio_transporte = auxilio_transporte.toFixed(2);
+                    document.getElementById ('auxilio_transporte').value=auxilio_transporte
+                    vhed = salario /240 * 1.25* hed
+                    vhed = vhed.toFixed(2);
+                    document.getElementById ('vhed').value=vhed
+                    vhen = salario /240 * 1.75* hen
+                    vhen = vhen.toFixed(2);
+                    document.getElementById ('vhen').value=vhen
+                    vhefd = salario /240 * 2* hefd  
+                    vhefd = vhefd.toFixed(2);
+                    document.getElementById ('vhefd').value=vhefd
+                    vhefn = salario /240 * 2.5* hefn
+                    vhefn = vhefn.toFixed(2);
+                    document.getElementById ('vhefn').value=vhefn
+                    elementoActivo = document.querySelector('input[name="rn"]:checked');
+                    if(elementoActivo) 
+                      recargo_nocturno = salario * 35 / 100
+                    else 
+                    recargo_nocturno = 0
+                    recargo_nocturno = recargo_nocturno.toFixed(2);
+                    document.getElementById ('recargo_nocturno').value=recargo_nocturno
+                    total_devengado = parseFloat(sueldo) + parseFloat(auxilio_transporte)+
+                                      parseFloat(vhed)+parseFloat(vhen)+parseFloat(vhefd)+parseFloat(vhefn)
+                                      +parseFloat(recargo_nocturno)
+                    total_devengado = total_devengado.toFixed(2);
+                    document.getElementById ('total_devengado').value=total_devengado
+                  //Salarios Deducidos al empleado
+                    salud = (total_devengado - auxilio_transporte) * 4 / 100
+                    salud = salud.toFixed(2);
+                    document.getElementById ('salud').value=salud
+                    pension = (total_devengado - auxilio_transporte) * 4 / 100
+                    pension = pension.toFixed(2);
+                    document.getElementById ('pension').value=pension
+                    prestamos = salario * 0,1
+                    prestamos = prestamos.toFixed(2);
+                    document.getElementById ('prestamos').value=prestamos
+                    if(salario>4640000 && salario<=18560000)
+                      fondo_solidaridad=salario*1/100
+                    else if(salario>18560000 && salario<=19720000)
+                      fondo_solidaridad=salario*1.2/100
+                      else if(salario>19720000 && salario<=20880000)
+                      fondo_solidaridad=salario*1.4/100
+                      else if(salario>20880000 && salario<=22040000)
+                      fondo_solidaridad=salario*1.6/100
+                      else if(salario>19720000 && salario<=23200000)
+                      fondo_solidaridad=salario*1.8/100
+                      else if(salario>23200000)
+                      fondo_solidaridad=salario*2/100
+                      else
+                      fondo_solidaridad=0
+                      fondo_solidaridad = fondo_solidaridad.toFixed(2);
+                      document.getElementById ('fondo_solidaridad').value=fondo_solidaridad
+                      total_deducido = parseFloat(salud)+parseFloat(pension)+parseFloat(prestamos)+
+                                       parseFloat(fondo_solidaridad)
+                      total_deducido = total_deducido.toFixed(2);
+                      document.getElementById ('total_deducido').value=total_deducido
+                      neto_pagado = parseFloat(total_devengado) + parseFloat(total_deducido)
+                      neto_pagado = neto_pagado.toFixed(2);
+                      document.getElementById ('neto_pagado').value=neto_pagado
+            
+            
+                }
+                function limpiar(){
+                  document.getElementById('tipo_documento').value=""
+                  document.getElementById('numero').value="" 
+                  document.getElementById('nombre').value=""
+                  document.getElementById('salario').value=""
+                  document.getElementById('dias').value=""
+                  document.getElementById('hed').value=""
+                  document.getElementById('hen').value=""
+                  document.getElementById('hefd').value=""
+                  document.getElementById('hefn').value=""
+                  document.getElementById ('sueldo').value="" 
+                  document.getElementById ('auxilio_transporte').value=""
+                  document.getElementById ('vhed').value=""
+                  document.getElementById ('vhen').value=""
+                  document.getElementById ('vhefd').value=""
+                  document.getElementById ('vhefn').value=""
+                  document.getElementById ('total_devengado').value=""
+                  document.getElementById ('salud').value=""
+                  document.getElementById ('pension').value=""
+                  document.getElementById ('prestamos').value=""
+                  document.getElementById ('fondo_solidaridad').value=""
+                  document.getElementById ('total_deducido').value=""
+                  document.getElementById ('neto_pagado').value=""
+              }
+              </script>
+ <div class="container10">
+    <br><h2>Programa 10 - Calculo de Nomina</h2><br>
+<table border="1">
+    <tr>
+      <th colspan="2">Informacion del Empleado</th>
+    </tr>
+    <tr>
+        <td>Tipo de Documento</td>
+        <td><select name ="tipo_documento" id="tipo_documento">
+            <option value="1">Cedula de Ciudadania</option>
+            <option value="2">Pasaporte</option>
+            <option value="3">Cedula de Extranjeria</option>
+            <option value="4" selected>Otro</option>
+        </select></td>
+    </tr>
+    <tr>
+        <td>Numero de Documento</td>
+        <td><input type="text" name = "numero" id="numero" size="40"></td>
+    </tr>
+    <tr>
+        <td>Nombre del Empleado</td>
+        <td><input type="text" name = "nombre" id="nombre" size="40"></td>
+    </tr>
+    <tr>
+        <td>Salario del Empleado</td>
+        <td><input type="text" name ="salario" id="salario" size="40"></td>
+    </tr>
+    <tr>
+        <td>Dias Laborados</td>
+        <td><input type="text" name="dias" id="dias" size="40"></td>
+    </tr>
+    <tr>
+        <td>Horas Extras Diurnas</td>
+        <td><input type="text" name ="hed" id="hed" size="40"></td>
+    </tr>
+    <tr>
+        <td>Horas Extras Nocturnas</td>
+        <td><input type="text" name="hen" id="hen" size="40"></td>
+    </tr>
+    <tr>
+        <td>Horas Extras Festivas Diurnas</td>
+        <td><input type="text" name="hefd" id="hefd" size="40"></td>
+    </tr>
+    <tr>
+        <td>Horas Extras Festivas Nocturnas</td>
+        <td><input type="text" name= "hefn" id="hefn" size="40"></td>
+    </tr>
+    <tr>
+        <th colspan="2">Salarios Devengados por el Empleado</th>
+      </tr>
+      <tr>
+          <td>Sueldo</td>
+          <td><input type="text" name="sueldo" id="sueldo" size="40"></td>
+      </tr>
+      <tr>
+          <td>Auxilio de Transporte</td>
+          <td><input type="text" name="auxilio_transporte" id="auxilio_transporte" size="40"></td>
+      </tr>
+      <tr>
+          <td>Valor Horas Extras Diurnas</td>
+          <td><input type="text" name="vhed" id="vhed" size="40"></td>
+      </tr>
+      <tr>
+        <td>Valor Horas Extras Nocturnas</td>
+        <td><input type="text" name="vhen" id="vhen" size="40"></td>
+    </tr>
+    <tr>
+        <td>Valor Horas Extras Festivas Diurnas</td>
+        <td><input type="text" name="vhefd" id="vhefd" size="40"></td>
+    </tr>
+    <tr>
+        <td>Valor Horas Extras Festivas Nocturnas</td>
+        <td><input type="text" name="vhefn" id="vhefn" size="40"></td>
+    </tr>
+    <tr>
+      <td>Tiene Recargo Nocturno
+      Si<input type="radio" name="rn" value="si"id="rn1">
+      No<input type="radio" name="rn" value="no"id="rn2">
+    </td>
+      <td><input type="text" name="recargo_nocturno" id="recargo_nocturno" size="40">
+      
+      </td>
+    </tr>            
+    <tr>
+        <td>Total Devengado</td>
+        <td><input type="text" name="total_devengado" id="total_devengado" size="40"></td>
+    </tr>
+    <tr>
+       <th colspan="2">Salarios Deducidos al Empleado</th>
+      </tr>
+      <tr>
+        <td>Salud</td>
+        <td><input type="text" name="salud" id="salud" size="40"></td>
+    </tr>
+    <tr>
+        <td>Pension</td>
+        <td><input type="text" name="pension" id="pension" size="40"></td>
+    </tr>
+    <tr>
+      <td>Prestamos</td>
+      <td><input type="text" name="prestamos" id="prestamos" size="40"></td>
+  </tr>
+  <tr>
+      <td>Fondo de Solidaridad</td>
+      <td><input type="text" name="fondo_solidaridad" id="fondo_solidaridad" size="40"></td>
+  </tr>
+  <tr>
+      <td>Total Deducido</td>
+      <td><input type="text" name="total_deducido" id="total_deducido" size="40"></td>
+  </tr>
+  <tr>
+    <th colspan="2">Neto Pagado</th>
+  </tr>
+  <tr>
+    <td>Neto Pagado</td>
+    <td><input type="text" name="neto_pagado" id="neto_pagado" size="40"></td>
+  </tr>
+  <tr>
+      <th>
+          <button type="submit" onclick="calcular();">
+           <img src="imagenes/enviar.png" alt="imagen" width="32" height="32" style="vertical-align: middle">
+           Enviar
+          </button>
+      </th>
+      <th><button type="reset" onclick="limpiar();">
+          <img src="imagenes/borrar.png" alt="imagen" width="32" height="32" style="vertical-align: middle">
+          Borrar
+          </button>
+      </th>
+  </tr>
+
+</h3>      
+</table>
+</div>
+    </header>
+    
+    <footer class="footer">
+        <div class="footer-content container">
+
+            <div class="codetheworld-io">
+                <br>
+                <br>
+                <a href="https://twitter.com" style="--color: #00acee">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+                <a href="https://instagram.com" style="--color: #E1306C">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://tiktok.com" style="--color: #FF0050">
+                    <i class="fa-brands fa-tiktok"></i>
+                </a>
+                <a href="https://facebook.com" style="--color: #3b5998">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="https://whatsapp.com" style="--color: #25D366">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+                <a href="https://youtube.com" style="--color: #c4302b">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+            </div>
+
+            <div class="link">
+                <h3>Ayuda</h3>
+                <ul>
+                    <li><a href="pagina14.html">Info</a></li>
+                    <li><a href="pagina10.html">Consejos</a></li>
+                </ul>
+            </div>
+
+            <div class="link">
+                <h3>Politica</h3>
+                <ul>
+                    <li><a href="https://protecciondatos-lopd.com/empresas/politica-de-privacidad-web/#:~:text=La%20pol%C3%ADtica%20de%20privacidad%20de%20una%20p%C3%A1gina%20web%20es%20un,se%20realizar%C3%A1%20de%20los%20mismos.">Privacidad</a></li>
+                    <li><a href="https://vpnoverview.com/es/desbloquear/el-streaming/mejores-servicios-de-streaming/">Servicios</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="scrips/scrip10.js"></script>
+</body>
+</html>
+
